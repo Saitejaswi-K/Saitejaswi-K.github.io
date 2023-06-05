@@ -21,5 +21,5 @@ let flipdata = function(){
         displayobject = dhonioldinfo;
         isdhoniold = true;
     }
-    document.getElementById()
+    document.getElementById("dhoni_img").src = displayobject.imgurl;
 }
