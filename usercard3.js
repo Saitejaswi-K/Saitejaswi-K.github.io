@@ -4,15 +4,9 @@ let dhonioldinfo = {
     Description: "Cricket player"
 }
 
-let dhoniyounginfo = {
-    imgurl: "https://c.ndtvimg.com/2021-06/jvqa57jo_ms-dhoni-throwback-instagram_625x300_07_June_21.jpg",
-    name: "Mahendra Singh Dhoni",
-    Description: "Captain Cool"
-}
 
-let isdhoniold = true;
 let displayobject;
-let flipdata = function(){
+let  getRandomUser = function(){
     if (isdhoniold == true){
         displayobject = dhoniyounginfo;
         isdhoniold = false;
