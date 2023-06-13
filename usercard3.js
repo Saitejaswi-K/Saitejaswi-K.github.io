@@ -9,17 +9,16 @@ let displayobject = {
     name: "",
     imgurl: "",
     Description: ""
-}
+};
 let  getRandomUser = function(){
     fetch('https://randomuser.me/api')
     .then(Response => Response.json())
     .then(data => {
     displayobject.name = data.results[0].name.first + " " + data.results[0].name.last
-    //displayobject.name = "User Name"
     displayobject.imgurl = data.results[0].picture.large
     displayobject.Description = data.results[0].gender
     document.getElementById("dhoni_img").src = displayobject.imgurl;
     document.getElementById("dhoni_name").innerHTML = displayobject.name;
     document.getElementById("dhoni_desc").innerHTML = displayobject.Description;
-})
+    })
 }
