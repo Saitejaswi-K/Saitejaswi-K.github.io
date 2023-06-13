@@ -7,14 +7,8 @@ let dhonioldinfo = {
 
 let displayobject;
 let  getRandomUser = function(){
-    if (isdhoniold == true){
-        displayobject = dhoniyounginfo;
-        isdhoniold = false;
-    }
-    else{
-        displayobject = dhonioldinfo;
-        isdhoniold = true;
-    }
+    fetch('https://randomuser.me/api')
+    .then(Response => Response.json())
     document.getElementById("dhoni_img").src = displayobject.imgurl;
     document.getElementById("dhoni_name").innerHTML = displayobject.name;
     document.getElementById("dhoni_desc").innerHTML = displayobject.Description;
