@@ -3,7 +3,6 @@ let dhonioldinfo = {
     name: "Dhoni",
     Description: "Cricket player"
 }
-
 let dhoniyounginfo = {
     imgurl: "https://c.ndtvimg.com/2021-06/jvqa57jo_ms-dhoni-throwback-instagram_625x300_07_June_21.jpg",
     name: "Mahendra Singh Dhoni",
